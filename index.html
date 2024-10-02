@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <form id="dadosPessoais">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" />
+        </div>
+        <div>
+          <label for="endereco">Endereço:</label>
+          <input type="text" name="endereco" id="endereco" />
+        </div>
+        <div>
+          <label for="cidade">Ciadade:</label>
+          <input type="text" name="cidade" id="cidade" />
+        </div>
+        <div>
+          <label for="estado">
+            <select name="endereco" id="endereco">
+              <option value="CE">Ceará</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="MG">Minas Gerais</option>
+            </select></label
+          >
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Dados profissionais</legend>
+        <legend>Natureza do cargo</legend>
+        <label for="cargo-gerencia">
+          <input
+            type="radio"
+            name="cargo"
+            id="cargo-gerencia"
+            value="gerencia"
+          />Gerência
+        </label>
+        <label for="cargo-financeiro">
+          <input
+            type="radio"
+            name="cargo"
+            id="cargo-financeiro"
+            value="financeiro"
+          />
+          Financeiro</label
+        >
+        <label for="cargo-recepcao"
+          ><input
+            type="radio"
+            name="cargo"
+            id="cargo-recepcao"
+            value="recepcao"
+          />Recepção</label
+        >
+        <label for="cargo-administrativo"
+          ><input
+            type="radio"
+            name="cargo"
+            id="cargo-administrativo"
+            value="administrativo"
+          />Administrativo</label
+        >
+        <label for="cargo-juridico"
+          ><input
+            type="radio"
+            name="cargo"
+            id="cargo-juridico"
+            value="juridico"
+          />
+          Jurídico</label
+        >
+        <legend>Área de interesse</legend>
+        <label for="computacao">
+          <input
+            type="checkbox"
+            name="interesses[]"
+            id="computacao"
+            value="computacao"
+          />Computação</label
+        >
+        <label for="biologia"
+          ><input
+            type="checkbox"
+            name="interesses[]"
+            id="biologia"
+            value="biologia"
+          />Biologia</label
+        >
+        <label for="meioambiente"
+          ><input
+            type="checkbox"
+            name="interesses[]"
+            id="meioambiente"
+            value="meioambiente"
+          />Meio Ambiente</label
+        >
+        <label for="engenharia"
+          ><input
+            type="checkbox"
+            name="interesses[]"
+            id="engenharia"
+            value="engenharia"
+          />Engenharia</label
+        >
+        <label for="historia"
+          ><input
+            type="checkbox"
+            name="interesses[]"
+            id="historia"
+            value="historia"
+          />História</label
+        >
+        <br />
+        <label for="curriculo">Mini currículo: </label>
+        <textarea
+          name="curriculo"
+          id="curriculo"
+          rows="5"
+          cols="44"
+          placeholder="Fale um pouco sobre você..."
+        ></textarea>
+      </fieldset>
+      <br />
+      <button type="submit" id="botaoEnviar">Enviar</button>
+      <button>Limpar</button>
+    </form>
+  </body>
+</html>
